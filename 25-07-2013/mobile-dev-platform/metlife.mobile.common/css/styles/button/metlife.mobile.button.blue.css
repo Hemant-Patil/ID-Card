@@ -1,0 +1,11 @@
+.button.blue { 
+	border:1px solid #44A7D1;
+   	background:#53ade6;
+   	background:-webkit-gradient(linear, left top, left bottom, from(#53ade6), to(#2296df));
+   	background:-moz-linear-gradient(top, #53ade6, #2296df);
+   	background:-o-linear-gradient(top, #53ade6, #2296df);   	
+ }
+/*Removed :hover to remove its persisting effect*/
+.button.blue:active{
+background:#007cc2
+}

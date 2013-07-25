@@ -1,0 +1,77 @@
+/****CALL TO ACTION****/
+nav.calltoaction {
+    width: 100%;
+    border-bottom: 1px solid #67964b ;
+    background:-webkit-gradient(linear,50% -14.8143%,50% 93.7463%,color-stop(0, rgba(111, 167, 96, 1)), color-stop(1, rgba(78, 144, 62, 1)));
+}
+
+nav.calltoaction ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient:horizontal;
+    -moz-box-orient:horizontal;
+    box-orient:horizontal;
+        box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+nav.calltoaction ul li
+{
+    -webkit-box-orient:vertical;
+    -moz-box-orient:vertical;
+    box-orient:vertical;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    box-flex:1;
+    border:none;
+    padding: 3px 0px;
+    width:50%;
+	background: #94c17d;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#94c17d),color-stop(49%,#76ad5c),color-stop(50%,#6ca650),color-stop(100%,#58953c));	
+	background: -webkit-linear-gradient(top,#94c17d 0,#76ad5c 49%,#6ca650 50%,#58953c 100%);
+}
+/*Properties are added to solve hard tap defect on calltoaction buttons*/
+nav.calltoaction li a {
+    text-decoration:none;
+    display:block;
+    width:100%;
+}
+
+nav.calltoaction ul li:first-child {
+    border-right: 1px solid #749e62;
+    min-height:75px;
+}
+
+nav.calltoaction ul li:last-child {
+    border-right: 1px solid #749e62;
+    border-left: 1px solid #abcc99;
+    min-height:75px;
+}
+
+nav.calltoaction li:active{
+	background:#6ea357;
+	background:-webkit-gradient(linear, left top, left bottom, from(#6ea357), to(#55923b));
+}
+
+nav.calltoaction .icon {
+    display:block;
+    margin:auto;
+    background-position: center center;
+    width:100%;
+    height: 25px;
+}
+
+nav.calltoaction .title {
+    font-size:20px;
+    font-family:FrutigerLTStdbold;
+    text-align:center;
+    margin-top:6px;
+    color:#fff;
+    display:block;
+    letter-spacing:-0.1px;
+}

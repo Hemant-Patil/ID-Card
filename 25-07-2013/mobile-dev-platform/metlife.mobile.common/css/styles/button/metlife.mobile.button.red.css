@@ -1,0 +1,19 @@
+.button.red { 
+    border:solid 1.27411px rgb(144, 39, 38);
+    background:-moz-linear-gradient(50% 0.307848% -90deg,
+    rgba(217, 85, 79, 1) 0%,
+    rgba(175, 86, 82, 1) 88.1519%);
+    background:-webkit-gradient(linear,50% 0.307848%,50% 88.1883%,
+    color-stop(0, rgba(217, 85, 79, 1)),
+    color-stop(1, rgba(175, 86, 82, 1)));
+}
+
+.button.red:active{ 
+    border:solid 1.27411px rgb(144, 39, 38);
+    background:-moz-linear-gradient(50% 0.309379% -90deg,
+    rgba(191, 75, 70, 1) 0%,
+    rgba(148, 73, 69, 1) 88.1532%);
+    background:-webkit-gradient(linear,50% 0.309379%,50% 88.1898%,
+    color-stop(0, rgba(191, 75, 70, 1)),
+    color-stop(1, rgba(148, 73, 69, 1)));
+}

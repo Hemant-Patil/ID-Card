@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html class='no-js'>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <title>Mobile Starter Kit - Slider</title>
+        <meta name='description' content=''>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='../../metlife.mobile.common/css/metlife.mobile.common.css'>
+		<style>
+			h2{margin:10px;}
+			/* To Apply bottom border to 3rd slider */
+			.sliderControl:nth-child(4){border-bottom:1px solid #cacaca;}
+		</style>		
+		<!--GENERATED FROM INITIALIZR - http://www.initializr.com-->
+        <script src='../../metlife.mobile.common/js/respond/modernizr-2.6.1-respond-1.1.0.min.js'></script>
+		<script src='../../metlife.mobile.common/js/require/require-jquery-1.8.2.js'></script>
+		<script type='text/javascript'>
+			var sliderOpen = -1;
+			
+			/* Slider function */
+			function showOptions(id){
+			var slider1 = $('#slider' + sliderOpen);; 
+			if(sliderOpen != -1){
+				var flag= false;
+				 $(slider1).css("-webkit-transform","translate(0)");
+				 $(slider1).siblings(".right").css("-webkit-transform","translate(0)");			
+				 if(flag)return;
+			}
+			if(sliderOpen != id){	
+				var slider = $('#slider' + id);
+				if( id =='4'){
+					$("#sliderInput").addClass("disable");
+					$(slider).css("-webkit-transform","translate(-180px)");
+					$(slider).siblings(".right").css("-webkit-transform","translate(50px)");		
+					$(slider).siblings(".right").children(".arrow").hide();
+					$(slider).children("span").show();
+					$(slider).siblings(".right").children("span").show();
+					sliderOpen = id;
+					setTimeout(function() {		
+						$(slider1).siblings(".right").children("span").hide();
+						$(slider1).children("span").hide();
+					  },700);
+					setTimeout(function() {		
+						$(slider1).siblings(".right").children(".arrow").show();
+					  },850);
+				}else if(id =='1' || id =='2' || id =='3')
+				 {
+
+					$(slider).css("-webkit-transform","translate(-180px)");
+					$(slider).siblings(".right").css("-webkit-transform","translate(50px)");		
+					$(slider).siblings(".right").children(".arrow").hide();
+					$(slider).children("span").show();
+					$(slider).siblings(".right").children("span").show();
+					sliderOpen = id;
+					setTimeout(function() {		
+						$(slider1).siblings(".right").children("span").hide();
+						$(slider1).children("span").hide();
+					  },700);
+					setTimeout(function() {		
+						$(slider1).siblings(".right").children(".arrow").show();
+					  },850);
+				 
+				 }
+			}
+			else{
+				setTimeout(function() {		
+					$(slider1).siblings(".right").children("span").hide();
+					$(slider1).children("span").hide();
+				  },700);
+				setTimeout(function() {		
+					$(slider1).siblings(".right").children(".arrow").show();
+				  },850);
+				sliderOpen = -1;
+				if(id == '3'){
+					setTimeout(function() {	
+						$("#differentDueAmount").removeClass("disable");
+				  },850);
+					
+				}
+			}
+		}
+		</script>
+    </head>
+    <body>
+	    <div data-role='page' class="page">
+			<header>
+				<a href='../index.html' class='button back'><span></span></a>
+					<h1>Components</h1>
+				<a href='index.html' class='button right'><span>Sign Out</span></a>
+			</header>
+			<div class='content overflow nopadding'>
+				<section class='scroll'>
+					<h2>Slider</h2>
+					<div class="sliderControl">
+						<div class="options">
+							<a href ='#' class="button blue ">Btn1</a>
+							<a href ='#' class="button blue">Btn2</a>
+							<a href ='#' class="button blue">Btn3</a>
+						</div>
+						<div class="left transition" onClick="showOptions('1')"	id='slider1'>
+							<label class='bold'>Label</label>
+							<div>$00.00</div>
+							<span></span>
+						</div>
+						<div class="right transition" onClick="showOptions('1')">
+							<span></span>
+							<div class="arrow"></div>
+						</div>
+					</div>
+					<div class="sliderControl">
+						<div class="options">
+							<a href ='#' class="button blue">Btn1</a>
+							<a href ='#' class="button blue">Btn2</a>
+							<a href ='#' class="button blue">Btn3</a>
+						</div>
+						<div class="left transition" onClick="showOptions('2')"	id='slider2'>
+							<label class='bold'>Label</label>
+							<div>$00.00</div>
+							<span></span>
+						</div>
+						<div class="right transition" onClick="showOptions('2')">
+							<span></span>
+							<div class="arrow"></div>
+						</div>
+					</div>
+					<div class="sliderControl">
+						<div class="options">
+							<a href ='#' class="button blue">Btn1</a>
+							<a href ='#' class="button blue">Btn2</a>
+							<a href ='#' class="button blue">Btn3</a>
+						</div>
+						<div class="left transition" onClick="showOptions('3')"	id='slider3'>
+							<label class='bold'>Label</label>
+							<div>$00.00</div>
+							<span></span>
+						</div>
+						<div class="right transition" onClick="showOptions('3')">
+							<span></span>
+							<div class="arrow"></div>
+						</div>
+					</div>					
+					<h2>Slider with Input element</h2>
+					<div class="sliderControl">
+						<div class="options">
+							<a href ='#' class="button blue">Btn1</a>
+							<a href ='#' class="button blue">Btn2</a>
+							<a href ='#' class="button blue">Btn3</a>
+						</div>
+						<div class="left transition" id='slider4'>
+							<label class='bold'>Label</label> 
+							<input type='text' id="sliderInput" placeholder='$0.00' onblur="showOptions('4')"/> 
+							<span></span>
+						</div>
+						<div class="right transition" onClick="showOptions('4')">
+							<span></span>
+							<div class="arrow"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>        
+    </body>
+</html>

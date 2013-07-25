@@ -1,0 +1,29 @@
+/* Declaration of MetLife font families. */
+@font-face {
+    font-family:FrutigerLTstdBlack;
+    src: url( ../fonts/FrutigerLTStd-Black.otf) format("opentype");
+}
+@font-face {
+    font-family:FrutigerLTstdBlackCn;
+    src: url( ../fonts/FrutigerLTStd-BlackCn.otf) format("opentype");
+}
+@font-face {
+    font-family: FrutigerLTstdBold;
+    src: url( ../fonts/FrutigerLTStd-Bold.otf) format("opentype");
+}
+@font-face {
+    font-family:FrutigerLTstdBoldCn;
+    src: url( ../fonts/FrutigerLTStd-BoldCn.otf) format("opentype");
+}
+@font-face {
+    font-family: FrutigerLTstdExtraBlackCn;
+    src: url( ../fonts/FrutigerLTStd-ExtraBlackCn 2.otf ) format("opentype");
+}
+@font-face { 
+    font-family:FrutigerLTStdRoman;
+    src: url( ../fonts/FrutigerLTStd-Roman.otf) format("opentype");
+}
+@font-face { 
+    font-family:Arial;
+    src: url( ../fonts/arial.ttf) format("opentype");
+}

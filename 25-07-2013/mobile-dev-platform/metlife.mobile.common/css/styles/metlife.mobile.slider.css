@@ -1,0 +1,124 @@
+.sliderControl{
+	width:100%;
+	height:70px;
+	position:relative;
+	overflow:hidden;	
+	border-top:1px solid #cacaca;
+	background:#ebebec;	
+	box-shadow: #d3d4d5 0px 0px 5px 1px inset;
+	-webkit-box-shadow: #d3d4d5 0px 0px 5px 1px inset;
+	box-shadow: #d3d4d5 0px 0px 5px 1px inset;	
+}
+
+.sliderControl:last-child{border-bottom:1px solid #cacaca;}
+
+.sliderControl .options{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+}
+
+.sliderControl div:nth-child(2),.sliderControl div:nth-child(3){ /* To apply gradient to left and right section of sliderControl */
+	background-image: linear-gradient(bottom, rgb(240,241,243) 8%, rgb(252,253,255) 92%);
+	background-image: -webkit-linear-gradient(bottom, rgb(240,241,243) 8%, rgb(252,253,255) 92%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.08, rgb(240,241,243)),
+		color-stop(0.92, rgb(252,253,255))
+	);
+}
+
+/* Properties for left part of sliderControl */
+.sliderControl .left{
+	position:absolute;
+	width:90%;
+	height:50px;
+	padding:20px 0 0 0;
+	-webkit-box-shadow: 3px 0 5px -1px #d3d4d5;
+	box-shadow: 3px 0 5px -1px #d3d4d5;
+}
+
+/* Properties for right part of sliderControl */
+.sliderControl .right{
+	position:absolute;
+	right:0;
+	width:10%;
+	height:inherit;
+}
+
+.sliderControl .left label{
+    display: inline-block;
+    min-width: 60%;
+    padding-left:15px;
+}
+.sliderControl .left div,.sliderControl .left input{ /* Properties common between div and input (both are inside div.left )*/
+    background:#efefef;
+    border-bottom:2px solid #FBFBFB;
+    color:#008FC5;
+    font: 16px/10px FrutigerLTstdBlack;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.sliderControl .left div{ /* Properties specific to div */	
+    border-top:2px solid #CCC;
+    padding:6px 10px;  
+    display: inline-block;
+    width:25%;
+}
+
+.sliderControl .left input{ /* Properties specific to input */
+	border-top:1px solid #CCC;
+	border-left:none;
+	border-right:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	line-height:16px; 
+    padding:3px 6px 3px 8px;  
+    width:33% !important;  
+    z-index:10;
+}
+
+.sliderControl input::-webkit-input-placeholder{color:#008FC5;}
+
+/* Properties that are common to both left lip and right lip */
+.sliderControl span{
+	position: absolute;
+	display:none;
+    border-style:solid;
+    border-width:7px;    
+	top:28px;
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	background:transparent;
+}
+
+/* Properties that is specific to left lip */
+.sliderControl .left span{
+	right: -14px;
+    border-color:transparent transparent #f6f7f9 transparent;
+}
+
+/* Properties that is specific to right lip */
+.sliderControl .right span{border-color:transparent transparent #ebebec transparent;}
+
+ /* Arrow icon on right */
+.sliderControl .right .arrow{
+	width:8px;
+    height:15px;
+	margin:27px auto 0 auto;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAYAAAECzwZMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZRJREFUeNpiYEAGkZGR/5kY0AFAAIGEBUA0SCoARTGEAAKAAEKIQAEjNkEQJwFdQADGBgggsCyyvSD75gMF32M4EogNMARhWhjQzYDJGiLrf4/TWoAAYgQK7AfSDiDO8uXLGdHNZERyOcyYBUCFiRiehyo8D6QMkE1jZGDAGsywgFlAnAlobpgAlCwk2hcAAQQzej82cWaoYxR0dXU/Xrly5QR6mDZC2f0oMQiSBNrVAKQfQPnvMUIOza8fgBoEUeIOybUCMAeiR6wjlHYAKghgxOKt+yDXY+gESjjAJIAgEN1YWGBsALphA2HXQu2BuVoQHghAiX4kewTRg68Ayi4E6vpAdKwABBgs0ucDqQRsCQ8fACUIUO5dj0XOEWjIAbya0ZzmgCZ/AWiAIUHNUAMMoAEtgKYuEWjIAryakQxBDgMYAKU5Q+QQZcKmGRpgoDhBDnpQXL0HGtyA12Y0V4DisR9NGGSoIxMD+eADIx4bQc48jyXwGqH5jrIAwxZV57GYhz+qyEokeJInyIkXCCZPcjMGAJicsxs3yyYRAAAAAElFTkSuQmCC) left center no-repeat;
+	background-size:8px 15px;
+}
+
+.sliderControl .button.blue{ /* To over ride some generic properties of button and to add some specific properties */
+	margin:0 3px 0 0 !important;
+	padding:5px 7px;
+	font-size:14px !important;
+	-webkit-box-shadow: #c9c9cb 1px 1px 1px 1px;
+	box-shadow: #c9c9cb 1px 1px 1px 1px;	
+}
+
+.sliderControl .transition{-webkit-transition:all 1.0s ease-in-out;transition:all 1.0s ease-in-out;}/* Transition effect */

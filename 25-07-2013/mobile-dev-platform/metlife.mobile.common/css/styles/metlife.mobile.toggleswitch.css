@@ -1,0 +1,45 @@
+.toggleswitch{
+    overflow:hidden;
+}
+.toggleswitch .options{
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	color: #808080;
+	border: 1px solid #CDCFD0;
+	background-image: linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -o-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -moz-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -webkit-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -ms-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);	
+	background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.09, rgb(218,218,218)),
+			color-stop(0.87, rgb(244,244,244))
+		);
+	padding:6px 10px 4px 10px;
+    font-family:FrutigerLTstdBold;
+	font-size: 12px;
+	line-height:12px;
+}
+.toggleswitch .options:first-child{
+	-webkit-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+
+}
+.toggleswitch .options:last-child{
+	-webkit-border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
+	border-right-width: 1px;
+
+}
+.toggleswitch .active {
+	color: #FFFFFF;
+   	background:#53ade6;
+   	background:-webkit-gradient(linear, left top, left bottom, from(#53ade6), to(#2296df));
+   	background:-moz-linear-gradient(top, #53ade6, #2296df);
+   	background:-o-linear-gradient(top, #53ade6, #2296df);  
+	border: 1px solid #CDCFD0;
+}

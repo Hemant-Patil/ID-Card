@@ -1,0 +1,35 @@
+<header>
+	{{#header}}
+	{{#buttons}}<a id='{{id}}' class='{{cssClass}}' href='{{href}}'
+	{{#data}}
+		{{#transition}} data-transition='{{transition}}'{{/transition}}
+		{{#direction}} data-direction='{{direction}}'{{/direction}}
+		{{#rel}} data-rel='{{rel}}'{{/rel}}
+		{{#ajax}} data-ajax='{{ajax}}'{{/ajax}}
+	{{/data}}>{{title}}</a>
+	{{/buttons}}
+	<h1>{{title}}</h1>
+	{{/header}}
+</header>
+<header class="subheader">
+	{{#subHeader}}
+	<h2>{{title}}</h2>
+	{{/subHeader}}
+</header>
+
+<nav class='subnav'>
+	<ul>
+		{{#navigation}}
+		<li>
+                    <a href='#' data-lang="{{language}}" data-transition='slide' data-ajax='true' class="locales">
+                        <div class='item'>
+                            <span class='title'>{{title}}</span>
+                        </div>
+                    </a>
+                    <a href='#' class='icon arrow' data-transition='slide' data-ajax='true'></a>
+		</li>
+		{{/navigation}}
+	</ul>
+</nav>
+<div class='content'>
+</div>

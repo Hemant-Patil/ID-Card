@@ -1,0 +1,138 @@
+footer {
+	background: #3b3b3b;
+	color: #fff;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient:vertical;
+    -moz-box-orient:vertical;
+    box-orient:vertical;
+}
+
+footer a, footer span {
+	color: #FFFFFF;
+	font : 12px/20px FrutigerLTStdRoman;
+	text-decoration : none;
+}
+footer article{
+    background: #fff;
+     color: #595959;
+    font: 16px/20px FrutigerLTStdRoman;
+    padding:15px;
+}
+footer div {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	background: -webkit-gradient(linear,left top,left bottom,from(#3b3b3b),to(#2f2f2f));
+	background: -moz-linear-gradient(top,#3b3b3b,#2f2f2f);
+	background: -o-linear-gradient(top,#3b3b3b,#2f2f2f);
+	border-bottom: 1px solid #000;	
+	border-top:1px solid #555;
+}
+
+footer div div {
+    border-right: 1px solid #555;
+    border-left: 1px solid #000;
+    font-size: .8em;   
+}
+/*Side borders removed from bottom div of footer*/
+footer .vertical div{
+    border-left:none;
+    border-right:none;
+}
+
+footer .horizontal div{
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    box-flex:1;
+    text-align: center;
+}
+/*Dot between legal and privacy is center aligned*/
+footer .separator{
+    vertical-align:3px;
+}
+footer .horizontal div:first-child {
+    border-left: none;
+    width:45%;
+    text-align: left;
+}
+
+footer div div:last-child {
+	border-right: none;
+}
+
+footer .horizontal{
+	-webkit-box-orient:horizontal;
+    -moz-box-orient:horizontal;
+    box-orient:horizontal;
+}
+
+footer .vertical{
+	-webkit-box-orient:vertical;
+    -moz-box-orient:vertical;
+    box-orient:vertical;
+}
+footer .horizontal .active,footer .vertical .active{
+	 text-shadow: 1px 0 20px #fff;
+}
+
+footer .vertical div a{
+	font : 10px/20px FrutigerLTStdRoman;
+	text-decoration:none;
+}
+/* added for Legal & Privacy links on home screen*/
+footer .vertical div a {
+    display: inline-block;
+    padding: 12px 8px 5px 15px;
+}
+footer .vertical div a:last-child{
+    padding: 12px 15px 5px 8px;
+}
+/* added for Change language button on home screen*/
+footer .horizontal div a,footer .horizontal div span {
+	display:block;
+    padding:10px 15px 10px;
+}
+
+
+footer .vertical div:last-child {
+	padding: 1px 15px;
+}
+
+footer .copyright {
+	color: #999;
+	font-size: .8em;
+}
+
+/* ===== media queries ===== */
+/*Added for ldpi devices as banner was hiding on home page*/
+@media only screen and (-webkit-min-device-pixel-ratio: 0.75) {						
+footer .horizontal div a,footer .horizontal div span {
+    padding:7px 15px 7px;
+}
+footer .vertical div a{
+	font : 10px/0 FrutigerLTStdRoman;
+}
+}
+/* Regular devices & portrait mode*/
+@media screen and (min-width: 150px) and (max-width: 320px) {
+	/* TODO: Write CSS rules only if required */	
+}
+
+/* Smartphones having bigger screen size with portrait mode & Smartphone having regular screen size with landscape mode*/
+@media screen and (min-width: 321px) and (max-width: 500px) {
+	/* TODO: Write CSS rules only if required */
+
+}
+
+/* tabs, iPads in Portrait mode and SmartPhones in landscape mode  */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	/* TODO: Write CSS rules only if required */
+}
+
+/* Laptops, Desktops and tabs,iPads in landscape mode */
+@media screen and (min-width: 801px) and (max-width: 1820px) {
+	/* TODO: Write CSS rules only if required */
+}

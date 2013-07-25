@@ -1,0 +1,107 @@
+/*Added for flipswitch button getting cut form the top when scrolled*/
+.flipswitch {-webkit-overflow-scrolling: touch;}
+
+.flipswitch .label{
+   /* float:left;*/
+    padding-top:5px;
+    width:69%; /* to adjust text in different language */
+}
+
+.flipswitch .slider {
+    position: relative;
+    width: 90px;
+    -webkit-user-select: none;
+   /* float: right;*/
+}
+
+.flipswitch input {display: none!important;} /* To override default behaviour of input element*/
+
+.flipswitch label {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;    
+}
+
+.flipswitch .options {
+    width: 200%;
+    margin-left: -100%;
+    -webkit-transition: margin 0.2s ease-in 0s;
+    transition: margin 0.2s ease-in 0s;
+}
+.flipswitch .options > div {
+    float: left;
+    width: 50%;
+    height: 25px;
+    padding: 0;
+    font: 12px/25px FrutigerLTStdBold;
+    color: #808080;	
+   -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    -webkit-border-radius : 8px;    
+}
+.flipswitch .options .active {
+    padding-left: 15px;
+    border:1px solid #919191;
+   	background:#53ade6;
+   	background:-webkit-gradient(linear, left top, left bottom, from(#53ade6), to(#2296df));
+   	background:-moz-linear-gradient(top, #53ade6, #2296df);
+   	background:-o-linear-gradient(top, #53ade6, #2296df); 
+	color:#fff;
+}
+.flipswitch .options .inactive {
+    padding-right: 15px;
+    background:#fff;
+    text-align: right;
+	border:1px solid #919191;
+	background-image: linear-gradient(bottom, rgb(227,228,230) 10%, rgb(255,255,255) 90%);
+	background-image: -o-linear-gradient(bottom, rgb(227,228,230) 10%, rgb(255,255,255) 90%);
+	background-image: -moz-linear-gradient(bottom, rgb(227,228,230) 10%, rgb(255,255,255) 90%);
+	background-image: -webkit-linear-gradient(bottom, rgb(227,228,230) 10%, rgb(255,255,255) 90%);
+	background-image: -ms-linear-gradient(bottom, rgb(227,228,230) 10%, rgb(255,255,255) 90%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, rgb(227,228,230)),
+		color-stop(0.9, rgb(255,255,255))
+	);
+}
+.flipswitch .sliderBar {
+    width: 35px;
+    margin: 0px;
+    border-radius : 8px;
+    -webkit-border-radius : 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 53px;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    border:solid 1px #a4a4a4;
+    background-image: linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -o-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -moz-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -webkit-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);
+	background-image: -ms-linear-gradient(bottom, rgb(218,218,218) 9%, rgb(244,244,244) 87%);	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.09, rgb(218,218,218)),
+		color-stop(0.87, rgb(244,244,244))
+	);
+
+}
+.flipswitch input[type=checkbox]:checked + label .options{margin-left: 0;}
+
+.flipswitch input[type=checkbox]:checked + label .sliderBar{right: 0px;}
+
+.flipswitch .slider{margin-top:3px;}
+
+.flipswitch .large .inactive{padding-right: 10px;}
+
+.flipswitch .large div{
+    height: 30px;
+    line-height: 28px;
+}

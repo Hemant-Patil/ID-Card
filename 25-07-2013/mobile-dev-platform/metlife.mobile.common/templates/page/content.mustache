@@ -1,0 +1,96 @@
+<header>
+	{{#header}}
+        <div class="headerContents">
+        <div class="headerSection horizontal">
+	{{#buttons}}
+	   {{#left}}
+	        <a id='{{id}}' class='{{cssClass}}' href='{{href}}'
+				{{#data}}
+					{{#transition}} data-transition='{{transition}}'{{/transition}}
+					{{#direction}} data-direction='{{direction}}'{{/direction}}
+					{{#rel}} data-rel='{{rel}}'{{/rel}}
+					{{#ajax}} data-ajax='{{ajax}}'{{/ajax}}
+				{{/data}}><span></span></a>
+		{{/left}}
+	{{/buttons}}
+	<div class='title {{cssClass}}'><h1>{{title}}</h1></div>
+	{{#buttons}}
+       {{#right}}
+            <a id='{{id}}' class='{{cssClass}}' href='{{href}}'
+					{{#data}}
+						{{#transition}} data-transition='{{transition}}'{{/transition}}
+						{{#direction}} data-direction='{{direction}}'{{/direction}}
+						{{#rel}} data-rel='{{rel}}'{{/rel}}
+						{{#ajax}} data-ajax='{{ajax}}'{{/ajax}}
+					{{/data}}><span>{{title}}</span></a>
+		{{/right}}
+	{{/buttons}}
+ </div>
+</div>
+	{{/header}}
+</header>
+<!-- Function: toggle 
+   Logic: Function is used to changed the state of the toggle button --> 
+<!-- @description: Subheader of Provider List page is created . 
+   searchbox component has following elements
+   
+   - Location Icon 
+   - List/Map toggle 
+   - Refine button
+   - Search textbox 
+   which will be added as and when it required in its respective pages. --> 
+
+{{#subHeader}}
+	<header class="subheader">
+		<div class='{{cssClass}}'><h2>{{title}}</h2></div>       
+	    {{#searchBox}}
+		    <div class="searchbox">
+		        <searchSection class="horizontal">
+		         <div>
+	            <a id='geoLocation' class='location'><span></span></a>
+        	    </div>
+                           <div class='search'>
+					{{#search}}
+						{{#inputs}}
+					   		<input id ='{{id}}' type='{{type}}' placeholder='{{placeholder}}'/>
+						{{/inputs}}
+						<a class='{{cssClass}}'></a>
+					{{/search}}
+				</div> 
+                   
+			        
+	            	 
+			</searchSection>
+			
+		    </div>
+	    {{/searchBox}}  
+	</header>
+{{/subHeader}}
+{{#content}}
+<div data-role='title'>
+<script type="text/javascript">
+                		  function toggle(element){
+        				 $(".toggleswitch *").removeClass("active");
+					 $(element).addClass("active");
+				   }
+       			</script>
+
+        {{title}}
+        <div class="toggle">
+			            <div class="toggleswitch">
+			                {{#toggleSwitch}}
+			                    {{#options}}
+                                    <a id="{{id}}" href="{{href}}" class="{{cssClass}}" data-transition="slide" data-direction={{direction}} data-ajax="true" onclick="toggle(this);">
+                                        <span>{{label}}</span>
+                                    </a>
+			                    {{/options}}
+			                {{/toggleSwitch}}
+		            	</div>
+			        </div>
+
+
+</div>
+{{/content}}
+<div class='content overflow'>
+	<div id="loading"><div class="loader"></div></div>
+</div>

@@ -1,0 +1,47 @@
+.accordion *{margin:0;padding:0}
+.accordion{
+	width:100%;
+}
+.accordion dl{
+	border:1px solid #f1f3f4;
+}
+
+.accordion dl:last-child{margin-bottom:0;}
+
+.accordion dt{
+	font-family: FrutigerLTstdBold;
+	font-size: 15px;
+	padding: 15px 0 0 15px;
+	color: #595959;
+    cursor:pointer;
+    border-bottom:none;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+	background:#FFF url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAPCAYAAAFvivQJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAX1JREFUeNpiYEADjCAiMjLyP5BKBOINAAHEgBUAVbyHqmIACCBGIEMBSN8HYsPly5dfQFIEUnAAXed/mE4YAAggkKAADmsUmID0e3QdIPuhVoI5+2EKkI1nRDMepGMB0IEgfzEABBCyRxmAgowMBABQ7XwglQAKGEY0L8IA3HQ0W2EgESi/gBGLySBT52Ox9ANQgyADsQAaKwa45AECCB6mDCQCUBQ3AOl6IJ4AdFIhAQvg/gZFnj9UvAAaabg0OSAHFiOOgBEE2v4BSdN6IBWAHFiMeILfEajgANQVsPS2ASgWiJJa0NIYtoQJNgjGYUKXhcbZBjRhQWRNhKLIAV9gAQQYI1oAgEKuEJS0GKgIkAIfnKxBaQAU0uuxqAV5KxA5Zki0SAFqrgGu4ggUCf3Q3IcNJBLre6SEjA2AEze2lABy2X4cqeEC1PcPsOiZj81XUD2JyIUlIwFXg3xfgEO6EYj58ckDLWrAm5AIWI7PJwRDgixLiYizRFJSPAA87qioUtTT6gAAAABJRU5ErkJggg==') no-repeat 95% 50%;
+	background-size:15px 8px;
+}
+.accordion dt div{
+    width:220px; 
+    text-overflow:ellipsis;
+    overflow:hidden;
+    font-family: FrutigerLTstdBold;
+}
+.accordion .inactive{
+	white-space: nowrap;
+	background:#FFF url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAYAAAECzwZMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZRJREFUeNpiYEAGkZGR/5kY0AFAAIGEBUA0SCoARTGEAAKAAEKIQAEjNkEQJwFdQADGBgggsCyyvSD75gMF32M4EogNMARhWhjQzYDJGiLrf4/TWoAAYgQK7AfSDiDO8uXLGdHNZERyOcyYBUCFiRiehyo8D6QMkE1jZGDAGsywgFlAnAlobpgAlCwk2hcAAQQzej82cWaoYxR0dXU/Xrly5QR6mDZC2f0oMQiSBNrVAKQfQPnvMUIOza8fgBoEUeIOybUCMAeiR6wjlHYAKghgxOKt+yDXY+gESjjAJIAgEN1YWGBsALphA2HXQu2BuVoQHghAiX4kewTRg68Ayi4E6vpAdKwABBgs0ucDqQRsCQ8fACUIUO5dj0XOEWjIAbya0ZzmgCZ/AWiAIUHNUAMMoAEtgKYuEWjIAryakQxBDgMYAKU5Q+QQZcKmGRpgoDhBDnpQXL0HGtyA12Y0V4DisR9NGGSoIxMD+eADIx4bQc48jyXwGqH5jrIAwxZV57GYhz+qyEokeJInyIkXCCZPcjMGAJicsxs3yyYRAAAAAElFTkSuQmCC') no-repeat 95% 50%;
+	background-size:8px 15px;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0 13px 15px;
+	margin-bottom:10px;
+}
+dd{ 
+    background:#FFF;
+	border-top:none;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	padding: 1px 15px 15px 15px !important;
+	display:none;
+	margin-bottom:10px !important;
+}

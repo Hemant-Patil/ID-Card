@@ -1,0 +1,22 @@
+/****GRAY NAVIGATION****/
+nav.subnav.gray ul li { 
+                padding:25px 15px 15px 15px;
+				border-top:1px solid #ffffff;
+				border-bottom:1px solid #bfbfbf;
+				background: rgb(240,240,240); /* Old browsers */
+				background:-moz-linear-gradient(49.9999% 100% 90deg,rgba(228, 228, 228, 1) 0%,rgba(240, 240, 240, 1) 100%);
+				background:-webkit-gradient(linear,49.9999% 105.635%,49.9999% -4.44445%,color-stop(0, rgba(227, 227, 227, 1)),color-stop(1, rgba(241, 241, 241, 1)));
+				height:30px
+}
+nav.subnav.gray .item .title { /* These rules belongs to "Main Home Navigation" component */
+                                    color:#595959;
+                                    font: 14px/0 FrutigerLTstdRoman;
+}
+nav.subnav.gray .arrow {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAYAAAECzwZMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZRJREFUeNpiYEAGkZGR/5kY0AFAAIGEBUA0SCoARTGEAAKAAEKIQAEjNkEQJwFdQADGBgggsCyyvSD75gMF32M4EogNMARhWhjQzYDJGiLrf4/TWoAAYgQK7AfSDiDO8uXLGdHNZERyOcyYBUCFiRiehyo8D6QMkE1jZGDAGsywgFlAnAlobpgAlCwk2hcAAQQzej82cWaoYxR0dXU/Xrly5QR6mDZC2f0oMQiSBNrVAKQfQPnvMUIOza8fgBoEUeIOybUCMAeiR6wjlHYAKghgxOKt+yDXY+gESjjAJIAgEN1YWGBsALphA2HXQu2BuVoQHghAiX4kewTRg68Ayi4E6vpAdKwABBgs0ucDqQRsCQ8fACUIUO5dj0XOEWjIAbya0ZzmgCZ/AWiAIUHNUAMMoAEtgKYuEWjIAryakQxBDgMYAKU5Q+QQZcKmGRpgoDhBDnpQXL0HGtyA12Y0V4DisR9NGGSoIxMD+eADIx4bQc48jyXwGqH5jrIAwxZV57GYhz+qyEokeJInyIkXCCZPcjMGAJicsxs3yyYRAAAAAElFTkSuQmCC) no-repeat right 50%;
+	/* background: url(../auto/images/retina/auto.nextarrow_320x.png);*/
+	background-size:8px 15px;
+	width:8px;
+    height:15px;
+}
+nav.subnav.gray .item{padding:0px}

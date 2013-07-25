@@ -1,0 +1,57 @@
+<header class='home'>
+	<div class='logo'></div>
+	<div class='snoopy'></div>
+</header>
+<nav class='calltoaction'>
+    <ul>
+        {{#callToAction}}
+        <li>
+                <a id='{{id}}' href='{{href}}' class='icon {{icon}}' data-transition='slide' data-ajax='true'></a>
+                <a id='{{id}}' href='{{href}}' data-transition='slide' data-ajax='true'>
+                        <div>
+                                <span class='title'>{{title}}</span>
+                        </div>
+                </a>
+        </li>
+        {{/callToAction}}
+    </ul>
+</nav>
+<nav>
+    <ul>
+        {{#navigation}}
+        <li>
+            <a id='{{id}}' href='{{href}}' class='icon {{icon}}' data-transition='slide' data-ajax='true'></a>
+            <a id='{{id}}' href='{{href}}' data-transition='slide' data-ajax='true'>
+                    <div class='item'>
+                            <span class='title'>{{title}}</span>
+                    </div>
+            </a>
+        </li>
+        {{/navigation}}
+    </ul>
+</nav>
+<div class='content'>
+</div>
+<footer>
+    {{#footer}}
+        <section class='horizontal'>
+            <div>
+                <a href='{{href_lang}}' data-transition='slide' data-ajax="true">{{action}}</a>
+            </div>
+            <div>
+                <a id='{{signout_id}}' href='{{href_signout}}' data-transition='slide' data-ajax="true">{{signout}}</a>
+            </div>
+            <div>
+                <span>{{version_label}}{{version}}</span>
+            </div>
+        </section>
+        <section class='vertical'>
+            <div>
+                    <a href='{{href_legal}}' data-transition='slide' data-ajax="true">{{legal}}</a><span class='separator'>.</span><a href='{{href_privacy}}' data-transition='slide' data-ajax="true">{{privacy}}</a>
+            </div>
+            <div>
+                    <span class='copyright'>&copy; 2012 MetLife, Inc. &copy; 2012 PNTS</span>
+            </div>
+        </section>
+    {{/footer}}
+</footer>

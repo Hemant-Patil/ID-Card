@@ -1,0 +1,98 @@
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 3px 3px 1px #d6d6d6;
+	-moz-box-shadow: 0 3px 3px 1px #d6d6d6;
+	-webkit-box-shadow: 0 3px 3px 1px #d6d6d6;
+}
+
+nav ul li {
+    padding: 10px 15px 12px 15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    background: #58a3d0;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#58a3d0),color-stop(49%,#2587c2),color-stop(50%,#1a82be),color-stop(100%,#0671b0));	
+    background: -moz-linear-gradient(top,#58a3d0 0,#2587c2 49%,#1a82be 50%,#0671b0 100%);
+	background: -webkit-linear-gradient(top,#58a3d0 0,#2587c2 49%,#1a82be 50%,#0671b0 100%);
+}
+
+nav ul li.active{background:#007CC2;}
+
+nav ul li a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav ul li a .item {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    padding: 5px 0 0 0;
+}
+nav.subnav ul li a .item{
+    margin-right:15px; /*Added 15px margin for right on subnavigations */
+}
+nav ul li a .item .title {
+    color: #ffffff;
+    font: 20px/20px FrutigerLTstdBold; 
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+nav ul li a.icon {
+    display: inline-block ;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px !important; /* To handle multiple languages*/
+}
+/* ===== media queries ===== */
+
+/* Regular devices & portrait mode*//*For MDPI devices*/
+@media screen and (min-width: 150px) and (max-width: 500px) and (-webkit-device-pixel-ratio: 1.0) {
+    
+}
+/* tabs, iPads in Portrait mode and SmartPhones in landscape mode  */
+/* for MDPI devices*/
+@media screen and (min-width: 501px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 1.0) {
+    /* TODO: Write CSS rules only if required */
+}
+
+/* Regular devices & portrait mode*//*For HDPI devices*/
+@media screen and (min-width: 150px) and (max-width: 500px) and (-webkit-device-pixel-ratio: 1.5) {
+    
+}
+
+/* Regular devices & portrait mode*//*For Retina devices like iPhone*/
+@media screen and (min-width: 320px) and (-webkit-device-pixel-ratio: 2.0) {
+   
+}
+
+/* tabs, iPads in Portrait mode and SmartPhones in landscape mode  */
+/* for Retina devices*/
+@media screen and (min-width: 501px) and (max-width: 800px) and (-webkit-device-pixel-ratio: 2.0) {
+    /* TODO: Write CSS rules only if required */
+}
+
+/* Regular devices & portrait mode*//*for devices with min-width is 321 E.g. Google Nexus, Galaxy Note, S3, iPhone 5 etc*/
+@media screen and (min-width: 321px) and (max-width: 500px) and (-webkit-device-pixel-ratio: 2.0) {
+    /* TODO: Write CSS rules only if required */
+} 
+
+/* Laptops, Desktops and tabs,iPads in landscape mode */
+@media screen and (min-width: 801px) and (max-width: 1820px) {
+    /* TODO: Write CSS rules only if required */
+}
